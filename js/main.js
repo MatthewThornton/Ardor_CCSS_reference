@@ -3,9 +3,8 @@
  * Main AngularJS Web Application
  */
 var myApp = angular.module('myApp', [
-  'ngRoute'
+    'ngRoute',
 ]);
-
 
 /**
  * Configure the Routes
