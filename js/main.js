@@ -20,6 +20,7 @@ myApp.config(['$routeProvider', function ($routeProvider) {
     .when("/expressions_and_equations", {templateUrl: "partials/expressions_and_equations.html", controller: "PageCtrl"})
     .when("/geometry", {templateUrl: "partials/geometry.html", controller: "PageCtrl"})
     .when("/statistics_and_probability", {templateUrl: "partials/statistics_and_probability.html", controller: "PageCtrl"})
+    .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
     // else 404
     .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);
