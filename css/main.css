@@ -46,14 +46,9 @@ body {
     border: 1px solid #cccccc;
 }
 
-/* Half Page Height Carousel Customization */
-.carousel {
-    height: 50%;
-}
 
 .item,
-.active,
-.carousel-inner {
+.active {
     height: 100%;
 }
 
@@ -64,57 +59,6 @@ body {
     background-size: cover;
 }
 
-/* Social Icons Styles */
-.list-social-icons {
-    margin-bottom: 45px;
-}
-
-.tooltip-social a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.facebook-link a:hover {
-    color: #3b5998;
-}
-
-.linkedin-link a:hover {
-    color: #007fb1;
-}
-
-.twitter-link a:hover {
-    color: #39a9e0;
-}
-
-.google-plus-link a:hover {
-    color: #d14836;
-}
-
-/* Service Page Styles */
-.service-icon {
-    font-size: 50px;
-}
-
-/* 404 Page Styles */
-.error-404 {
-    font-size: 8em;
-}
-
-/* Pricing Page Styles */
-.price {
-    font-size: 4em;
-}
-
-.price-cents {
-    vertical-align: super;
-    font-size: 50%;
-}
-
-.price-month {
-    font-size: 35%;
-    font-style: italic;
-}
-
 /* Footer Styles */
 footer {
     margin: 50px 0;
@@ -123,8 +67,5 @@ footer {
 /* Responsive Styles */
 @media (max-width: 767px) {
 
-    .carousel {
-        height: 70%;
-        /* increases the carousel height so it looks good on phones */
-    }
+
 }

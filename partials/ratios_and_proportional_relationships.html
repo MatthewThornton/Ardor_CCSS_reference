@@ -1,4 +1,5 @@
 
+
 <div id="myCarousel" class="carousel slide">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -9,28 +10,14 @@
 
 
 <div class="section">
-
     <div class="container">
-
-        <div class="row">
-            <div class="col-lg-4 col-md-4">
-                <h3><i class="fa fa-check-circle"></i>
-                   <div ng-controller="StandardsCtrl">
-                       <ul>
-                           <li ng-repeat="standards in standards">
-                               {{standards.text}} - <em>{{standards.done}}</em>
-                           </li>
-                       </ul>
-
-
-                   </div>
-
-
-                    Ratios and Proportional Relationships CCSS.MATH.CONTENT.7.RP.A.1</h3>
-                Compute unit rates associated with ratios of fractions, including ratios of lengths,
-                areas and other quantities measured in like or different units. For example, if a person walks 1/2 mile
-                in each 1/4 hour, compute the unit rate as the complex fraction 1/2/1/4 miles per hour,
-                equivalently 2 miles per hour.
+        <div class="row" ng-controller="StandardsCtrl">
+            <div class="col-lg-4 col-md-4" ng-repeat="standards in standards | filter:{domain:'rp'}">
+                <h3>{{standards.shortText}}</h3>
+                <p>{{standards.id}}</p>
+                <div>
+                    {{standards.example}}
+                </div>
             </div>
         </div>
         <!-- /.row -->
@@ -39,28 +26,6 @@
     <!-- /.container -->
 
 </div>
-<!-- /.section -->
-
-<div class="section-colored text-center">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Explanation and prerequisits </h2>
-                <p><p>
-                \[
-                \frac{-b\pm\sqrt{b^2-4ac}}{2a}
-                \]
-            </p></p>
-                <p> students will need to know how to s.... </p>
-                <hr>
-            </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
 
 </div>
 

@@ -2,14 +2,15 @@
 /**
  * Main AngularJS Web Application
  */
-var App = angular.module('myApp', [
+var myApp = angular.module('myApp', [
   'ngRoute'
 ]);
+
 
 /**
  * Configure the Routes
  */
-App.config(['$routeProvider', function ($routeProvider) {
+myApp.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
     .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
@@ -26,17 +27,15 @@ App.config(['$routeProvider', function ($routeProvider) {
 /**
  * Controls Pages
  */
-App.controller('PageCtrl', function (/* $scope, $location, $http */) {
-  console.log("Page Controller reporting for duty.");
-
+myApp.controller('PageCtrl', function ($scope) {
+    console.log("Page Controller reporting for duty.");
 });
 
-App.controller('StandardsCtrl', function($scope, $http) {
+
+myApp.controller('StandardsCtrl', function($scope, $http) {
   console.log("Standards Controller reporting for duty.");
   $http.get('standards/standards.json')
       .then(function(res){
         $scope.standards = res.data;
       });
 });
-
-
